@@ -1,5 +1,8 @@
 # Gnome Icon Pack
 Gnome Icon Pack and Wallpapers for Android, based on CandyBar Dashboard
+ 
+Copyright (c) 2021 Sandor Anda
+
 
 # CandyBar Licence
 
