@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <version>1</version>s
+
+    <category title="System" />
+    <item drawable="browser" />
+    <item drawable="calculator" />
+    <item drawable="calendar" />
+    <item drawable="camera" />
+    <item drawable="clock" />
+    <item drawable="contacts" />
+    <item drawable="filemanager" />
+    <item drawable="gallery" />
+    <item drawable="mail" />
+    <item drawable="messaging" />
+    <item drawable="music" />
+    <item drawable="notepad" />
+    <item drawable="phone" />
+    <item drawable="settings" />
+    <item drawable="video" />
+    <item drawable="weather" />
+
+    <category title="Google" />
+    <item drawable="gmail" />
+    <item drawable="google_authenticator" />
+	<item drawable="google_calculator" />
+	<item drawable="google_camera" />
+	<item drawable="google_clock" />
+	<item drawable="google_contacts" />
+	<item drawable="google_games" />
+	<item drawable="google_keep" />
+    <item drawable="google_keyboard" />
+    <item drawable="google_maps" />
+	<item drawable="google_messaging" />
+    <item drawable="google_music" />
+	<item drawable="google_photos" />
+    <item drawable="google_play" />
+    <item drawable="google_translate" />
+    <item drawable="google_weather" />
+    <item drawable="google_maps" />
+	
+    <category title="Other" />
+    <item drawable="appbackup" />
+    <item drawable="boxes" />
+    <item drawable="characters" />
+    <item drawable="contrast" />
+    <item drawable="ereader" />
+    <item drawable="facebook" />
+    <item drawable="ifonts" />
+    <item drawable="messenger" />
+    <item drawable="passwords" />
+    <item drawable="podcasts" />
+    <item drawable="shortwave" />
+    <item drawable="solitaire" />
+    <item drawable="systemmonitor" />
+    <item drawable="tcmd" />
+
+
+</resources>

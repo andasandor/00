@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- YOUR ICON PACK NAME -->
+    <string name="app_name">Gnome Icon Pack</string>
+
+    <string name="theme_title">Gnome Icon Pack</string>
+    <string name="theme_name">Gnome Icon Pack</string>
+
+    <string name="theme_author">Developer</string>
+    <string name="developer_name">Developer</string>
+    <string name="developerName">Developer</string>
+    <string name="authorName">Developer</string>
+
+    <string name="authorLink">https://sandoranda.dev/</string>
+    <string name="developer_link">https://github.com/andasandor</string>
+
+    <string name="theme_description">Gnome Icons and Wallpapers for Android</string>
+    <string name="theme_info">Gnome Icons and Wallpapers for Android</string>
+    <string name="theme_ad_msg">Gnome Icons and Wallpapers for Android</string>
+
+    <string name="theme_feature">feature</string>
+
+    <string name="theme_preview1">preview1</string>
+    <string name="theme_preview2">preview2</string>
+
+    <string name="iconpack">dev.sandoranda.gnomeicons.free</string>
+
+</resources>

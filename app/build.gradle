@@ -1,0 +1,81 @@
+// Remove '/*' and '*/' to Enable OneSignal
+/*
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.9'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+*/
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword 'candybar'
+            storeFile file('candybar.jks')
+            storePassword 'candybar'
+
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    compileSdkVersion rootProject.ext.CompileSdk
+
+    defaultConfig {
+        applicationId 'dev.sandoranda.gnomeicons.free'
+        minSdkVersion rootProject.ext.MinSdk
+        targetSdkVersion rootProject.ext.TargetSdk
+        versionCode  1
+        versionName "1.0"
+        multiDexEnabled true
+
+        // This code loads the license key from `local.properties` file or `LICENSE_KEY` environment variable
+        // and saves it as build config field named "LICENSE_KEY"
+        String licenseKey = ''
+        Properties props = new Properties()
+        File propFile = rootProject.file('local.properties')
+        if (propFile.exists()) {
+            props.load(propFile.newDataInputStream())
+            licenseKey = props.get('license_key', '')
+        }
+        if (licenseKey.contentEquals('')) {
+            licenseKey = System.getenv('LICENCE_KEY')
+        }
+        buildConfigField 'String', 'LICENSE_KEY', "\"$licenseKey\""
+
+        // Remove '/*' and '*/' below to enable OneSignal
+        /*
+        manifestPlaceholders = [
+          onesignal_app_id: 'ONESIGNAL APP ID',
+          onesignal_google_project_number: 'REMOTE'
+        ]
+        */
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            versionNameSuffix '1.0.0'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':library')
+
+    // Remove '//' below to Enable OneSignal
+    //implementation 'com.onesignal:OneSignal:3.15.4'
+}
