@@ -1,6 +1,10 @@
 # Gnome Icon Pack
 Gnome Icon Pack and Wallpapers for Android, based on CandyBar Dashboard
- 
+
+Download APK:
+
+https://github.com/andasandor/gnomeicons-main/blob/main/gnome_icon_pack_1.0.0.apk?raw=true
+
 Copyright (c) 2021 Sandor Anda
 
 
